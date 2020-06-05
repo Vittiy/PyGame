@@ -1,6 +1,6 @@
 import pygame
 import math
-from game import Game
+from utils.game import Game
 pygame.init()
 
 # Génerer la fenetre du jeux
