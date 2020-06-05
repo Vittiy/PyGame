@@ -1,4 +1,4 @@
-## INSTALL PYGME
+## INSTALL PYGAME
 
 ```bash
 pip install pygame

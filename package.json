@@ -2,7 +2,7 @@
   "name": "pygame",
   "version": "1.0.0",
   "description": "Un simple repot pour la série de graven sur le développement d'un jeux en python ! ",
-  "main": "index.js",
+  "main": "main",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
