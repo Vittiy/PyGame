@@ -25,6 +25,9 @@ while running:
     # appliquer l'image de mon joueur
     screen.blit(game.player.image, game.player.rect)
 
+    # actualiser la barre de vie du joueur
+    game.player.update_healt_bar(screen)
+
     # récuperer les projectiles du joueur
     for projectile in game.player.all_projectiles:
         projectile.move()
@@ -35,6 +38,7 @@ while running:
     # recuperer les montres du jeux
     for monster in game.all_monsters:
         monster.forward()
+        monster.update_healt_bar(screen)
 
     # appliquer l'ensemble des images du groupe de montres
     game.all_monsters.draw(screen)

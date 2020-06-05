@@ -1,6 +1,7 @@
 import pygame
 from projectile import Projectile
 
+
 # cree une premiere class qui va représenter le joueur
 
 class Player(pygame.sprite.Sprite):
@@ -17,6 +18,15 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = 400
         self.rect.y = 500
+
+    def damage(self, amount):
+        if self.healt - amount > amount:
+            self.healt -= amount
+
+    def update_healt_bar(self, surface):
+        # déssiner notre bar de vie
+        pygame.draw.rect(surface, (60, 63, 60), [self.rect.x + 50, self.rect.y + 20, self.max_healt, 7])
+        pygame.draw.rect(surface, (111, 210, 46),  [self.rect.x + 50, self.rect.y + 20, self.healt, 7])
 
     def launch_projectile(self):
         # cree une nouvelle instance de la class projectile
