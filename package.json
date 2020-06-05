@@ -1,0 +1,24 @@
+{
+  "name": "pygame",
+  "version": "1.0.0",
+  "description": "Un simple repot pour la série de graven sur le développement d'un jeux en python ! ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssoraa/PyGame.git"
+  },
+  "keywords": [
+    "py",
+    "game",
+    "graven"
+  ],
+  "author": "Sora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssoraa/PyGame/issues"
+  },
+  "homepage": "https://github.com/ssoraa/PyGame#readme"
+}
